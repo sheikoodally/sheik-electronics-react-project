@@ -14,7 +14,7 @@ export class Header extends Component {
                   <div className="logo">
                     <h4>Sheik Electronics</h4>
                   </div>
-                  <ul className={this.state.showNav ? "navlinks navlinks1" : "navlinks navlinks2"}>
+                  <ul className={this.state.showNav ? "navlinks navlinks_show" : "navlinks hide"}>
                       <li><a href="#">Home</a></li>    
                       <li><a href="#">Electronics</a></li>    
                       <li><a href="#">Phones</a></li>    
