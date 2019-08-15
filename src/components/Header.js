@@ -18,7 +18,7 @@ export class Header extends Component {
                       <li><a href="#0">Home</a></li>    
                       <li><a href="#">Electronics</a></li>    
                       <li><a href="#">Phones</a></li>    
-                      <li><a href="#">Laptops</a></li>    
+                      <li><a href="#">Computers</a></li>    
                       <li><a href="#">Login</a></li>    
                   </ul> 
                     <div className="burger" onClick = {() => this.setState({showNav: !this.state.showNav})} >
