@@ -21,6 +21,8 @@ a:visited {
   
 a:hover {
     text-decoration: none;
+    color: aquamarine;
+    
 }
   
 a:active {
@@ -98,12 +100,9 @@ a:active {
         width: 75%;
         height: 50px;
         border-bottom: #333 2px solid;
-        padding: 12px;
+        padding: 0.8rem;
     }
 
-    .navlinks li a {
-        color: aquamarine;
-    }
 
 
     .burger{
