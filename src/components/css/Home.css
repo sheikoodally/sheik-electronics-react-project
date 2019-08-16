@@ -11,6 +11,14 @@
     grid-column-gap: 3%;
 }
 
+table{
+    margin: 0 auto;
+}
+
+tr{
+    text-align: left;
+}
+
 
 .colorPattern:nth-child(odd){
     background-color: #FFF8DC;
@@ -28,6 +36,11 @@
 #model{
     color: #333;
     font-size: 2rem;  
+}
+
+.Phoneprice{
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 600px)

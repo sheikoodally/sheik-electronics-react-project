@@ -5,7 +5,8 @@
             "model" : "iPhone X 64GB",
             "price": 1200,
             "camera": "8 MP Front/16 MP back",
-            "battery": "3000 mAh"
+            "battery": "3000 mAh",
+            "picture": "phone1"
 
         },
         {
@@ -14,7 +15,8 @@
             "model" : "iPhone XS Max",
             "price": 1299,
             "camera": "7 MP Front/16 MP back",
-            "battery": "3174 mAh"
+            "battery": "3174 mAh",
+            "picture": "phone2"
 
         },
         {
@@ -23,7 +25,8 @@
             "model" : "iPhone XR",
             "price": 1100,
             "camera": "8 MP front/12 MP back",
-            "battery": "2942 mAh"
+            "battery": "2942 mAh",
+            "picture": "phone3"
 
         },
         {
