@@ -12,7 +12,7 @@ export class Home extends Component {
 
                 <section className="homeSec">
                     {this.props.items.phones.slice(0,3).map(phones =>{
-                    return <div key = {phones.id} className="alignCenter">
+                    return <div key = {phones.id} className="colorPattern">
                             <h3 id="brand"> {phones.brand}</h3>
                             <h4 id="model"> {phones.model}</h4>
                             </div>        
