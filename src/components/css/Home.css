@@ -1,0 +1,48 @@
+.home{
+    min-height: 100vh;
+    max-height: fit-content;
+    box-sizing: border-box;
+}
+
+#brand{
+    color: #333;
+    font-size: 3rem;
+}
+
+#model{
+    color: #333;
+    font-size: 2rem;
+    
+}
+
+.homeSec{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+.alignCenter:nth-child(odd){
+    background-color: #FFF8DC;
+}
+
+.alignCenter:nth-child(even){
+    background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 600px)
+{
+    .homeSec{
+        display: inline;
+    }
+
+    #brand{
+        font-size: 2rem;
+    }
+    
+    #model{
+        font-size: 1rem;
+        
+    }
+}

@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ShoppingItems from './data/ShoppingItems'
+import Home from './components/Home';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Footer/>
-    </div>
-  );
-}
+class App extends Component {
+  render() {
 
+    const shopItems = ShoppingItems;
+
+    this.state = { 
+      shopItems
+    }
+
+
+
+    return (
+      <div className="App">
+          <Header/>
+          <Home items = {this.state.shopItems} />
+          <Footer/>
+      </div>
+    );
+  }
+}
 export default App;
