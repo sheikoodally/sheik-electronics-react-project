@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import phone1 from '../shoppingimg/phone/phone1.jpg'
-import phone2 from '../shoppingimg/phone/phone2.jpg'
-import phone3 from '../shoppingimg/phone/phone3.jpg'
 import './css/Home.css';
 
 export class Home extends Component {
 
-    render() {     
+    render() {
+
         return (
 
             <div className="home">

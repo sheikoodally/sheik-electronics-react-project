@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import './css/Header.css';
 
 export class Header extends Component {
@@ -9,7 +10,7 @@ export class Header extends Component {
 
     render() {
         return (
-            <div>
+            /* <div>
                 <nav>
                   <div className="logo">
                     <h4>Sheik Electronics</h4>
@@ -28,7 +29,24 @@ export class Header extends Component {
                     </div>
                 </nav>
               <script src="HeadNav.js"></script>
-            </div>
+            </div> */
+
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Navbar.Brand href="#home">Sheik Electronics</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav justify className="justify mr-auto">
+                    <Nav.Link href="#electronics">Electronics</Nav.Link>
+                    <Nav.Link href="#phones">Phones</Nav.Link>
+                    <Nav.Link href="#computers">Computers</Nav.Link>
+                    </Nav>
+                    <Nav>
+                    <Nav.Link href="../Home.js">
+                        Dank memes
+                    </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
         )
     }
 }
