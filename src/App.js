@@ -2,27 +2,29 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Electronics from './components/Electronics';
-import ShoppingItems from './data/ShoppingItems'
-import Home from './components/Home.js'
+import Home from './components/Home.js';
+import Phones from './components/Phones';
+import Computers from './components/Computers';
+import Errors from './components/Errors';
 import './App.css';
 
-class App extends Component {
-  render() {
+import {Route, Switch} from 'react-router-dom';
 
-    const shopItems = ShoppingItems;
-
-    this.state = { 
-      shopItems
-    }
+function App() {
 
     return (
       <div className="App">
-          <Header/>
-          <Home items = {this.state.shopItems} />
-          <Electronics items = {this.state.shopItems}/>
-          <Footer/>
+        <Header/>
+        <Switch>
+          <Route  path="/" component={Home}/>
+          <Route exact path="/electronics" component={Electronics}/>
+          <Route exact path="/phones" component={Phones}/>
+          <Route exact path="/computers" component={Computers}/>
+          <Route Component={Errors}/>
+        </Switch>
+
+        <Footer/>
       </div>
     );
-  }
 }
 export default App;

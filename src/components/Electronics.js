@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import './css/Home.css';
+import ShoppingItems from '../data/ShoppingItems';
+
 
 export class Electronics extends Component {
 
     render() {
+
+        const shopItems = ShoppingItems;
+
+        this.state = { 
+            shopItems
+        }
 
         return (
 
@@ -11,7 +19,7 @@ export class Electronics extends Component {
 
 
                 <section className="homeSec">
-                    {this.props.items.electronics.map(electronics =>{
+                    {this.state.shopItems.electronics.map(electronics =>{
                     return <div key = {electronics.id} className="colorPattern">
                             <h3 id="brand"> {electronics.brand}</h3>
                             <h4 id="model"> {electronics.model}</h4>
