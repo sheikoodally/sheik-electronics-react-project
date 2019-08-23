@@ -42,7 +42,7 @@ export class Header extends Component {
                     </Nav>
                     <Nav>
                     <Nav.Link href="../Home.js">
-                        Dank memes
+                        Login
                     </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
