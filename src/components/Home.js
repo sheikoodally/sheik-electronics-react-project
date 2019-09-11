@@ -28,7 +28,6 @@ export class Home extends Component {
                             <tr><p>Camera: {phones.camera}</p></tr> 
                             <tr><p>Battery capacity: {phones.battery}</p></tr>
                             </table>
-                            <h3>hey</h3>
                             </div>        
                     })}
                 </section>
